@@ -3,7 +3,7 @@
  *   http://steveram.info/jPolaroid/
  *
  * Copyright (c) 2009 Steven Ramkumar (http://steveram.info)
- * Licensed under GPL (GPL-LICENSE.txt).
+ * Licensed under MIT.
  *
  * Built on top of the jQuery library
  *   http://jquery.com
