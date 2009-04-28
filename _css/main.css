@@ -1,0 +1,131 @@
+body{
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+#hd{
+background-color:#FFFFFF;
+color:black;
+font-size:27px;
+padding-bottom:10px;
+}
+
+a:link, a:visited{
+	color:#FFFCD1;
+}
+#tagline{
+	background-color:#464E70;
+	color:white;
+	font-size:12px;
+	margin-top:60px;
+	padding:5px;
+	text-align:center;
+}
+#bd{
+	
+}
+
+#title_img{
+	float:right;
+}
+
+#hd .center{
+	margin:15px auto 0;
+	width:740px;
+}
+
+#ft .center{
+	margin:15px auto 0;
+	width:300px;
+}
+
+
+#bd{
+
+}
+
+.example{
+	margin-bottom:40px;
+}
+
+.example a:link, .example a:visited{
+	color:#464E70;
+	text-decoration:none
+}
+
+.example a:hover{
+	text-decoration:underline;
+}
+	
+.example h2 {
+border-bottom:1px solid #D8DFEA;
+font-size:17px;
+margin:0;
+padding:0;
+}
+
+.yui-g .center{
+	margin:14px auto 0;
+	width:910px;
+	font-size:15px;
+}
+
+.example p{
+	margin:10px 0;
+}
+
+.code {
+margin-top:15px;
+background:#F7F7F7 none repeat scroll 0 0;
+border-bottom:1px solid #EBEBEB;
+border-top:1px solid #EBEBEB;
+padding-left:10px;
+padding-top:10px;
+}
+
+.code h3 {
+font-size:11px;
+font-weight:bold;
+text-decoration:underline;
+}
+
+ol {
+margin:0;
+padding:0 1.5em;
+}
+table {
+background:#5D574B none repeat scroll 0 0;
+border:5px solid #464E70;
+border-collapse:collapse;
+color:#FFFFFF;
+width:800px;
+}
+thead {
+}
+thead th {
+border-bottom:1px dotted #FFFFFF;
+font-size:120%;
+padding:1em 1em 0.5em;
+text-align:left;
+}
+thead tr {
+}
+td {
+padding:0.5em 1em;
+}
+tbody tr.odd td {
+background:transparent url(/jpolaroid/_images/tr_bg.png) repeat scroll left top;
+}
+tfoot {
+}
+tfoot td {
+padding-bottom:1.5em;
+}
+tfoot tr {
+}
+* html tr.odd td {
+background:#CC0000 none repeat scroll 0 0;
+}
+#middle {
+background-color:#464E70;
+}
+

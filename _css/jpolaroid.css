@@ -1,0 +1,71 @@
+.polaroid-container{
+    position:relative; /* for being able to use absolute positioning for the 'tape' images, explained below */
+    float:left; /* with a float we can a)embed the polaroid photo within text and have it wrap around and b) we don't need to specify a width/height */
+    margin: 20px; /* we want to put some space between the polaroid photo and the surrounding content */
+}
+.polaroid-shadow{
+    background-color: #CCCCCC; /* a light gray color, for the pretend shadow */
+    text-align: center; /* aligns the text and image to the center */
+}
+
+.polaroid{
+    background-color: #FDFDFD; /* a light gray background */
+    border: 1px solid #999999; /* a thin border in darker gray */
+    position: relative; /* this allows us to move the the polaroid div without removing it from the flow of the page i.e. we can offset it and show the 'shadow' from below */
+    left: -3px; /* we move the polaroid to the left... */
+    top: -3px; /* ...and up */
+}
+
+.polaroid-content-container{
+    margin: 15px 15px 32px 20px;
+}
+
+.polaroid-pic{
+    display: block; /* this prevents the caption from sliding in next to the image,
+                     since both are inline elements by default */
+    border: 1px solid #CCCCCC; /* give the image a thin, slightly gray border */
+    border-top: 1px solid #999999; /* then we override the border for the top and right... */
+    border-right: 1px solid #999999; /* ...for a very subtle film-embedded-in-the-paper effect */
+    margin-bottom: 15px; /* we need some gap betwen the image and caption, which also serves to increase the bottom portion of the polaroid, adding to the effect */
+}
+
+.polaroid-caption{
+    color: #777777; /* dark gray for the caption text... */
+    font-size: 0.75em; /* ...which will be 75% of the enclosing container's font... */
+    font-style: italic; /* ...and will be italicised */
+}
+
+.tape{
+    position: absolute; /* absolute positioning so that the images can be place at will. This works because the container class specifies relative positioning for the div */
+}
+
+.top-left{
+    width: 80px; /* specify the width... */
+    height: 87px; /* ...and height */
+    top: -20px; /* place the image, offset it to top by 20px */
+    left: -20px; /* and to the left by 20px */
+    
+    /* Only IE will use this filter */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../_images/tape-tl.png');
+}
+
+/* similar rules for the other tape */
+.top-right{
+    width: 87px;
+    height: 80px;
+    top: -20px;
+    right: -20px;
+
+    /* Only IE will use this filter */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../_images/tape-tr.png');
+}
+
+/* IE ignores styles with [attributes], so it will skip the following. */
+.top-left[class] {
+  background-image:url('../_images/tape-tl.png');
+}
+
+/* IE ignores styles with [attributes], so it will skip the following. */
+.top-right[class] {
+  background-image:url('../_images/tape-tr.png');
+}
